@@ -1,0 +1,135 @@
+@charset "UTF-8";    /* 文字コードの指定 */
+
+@import 'https://fonts.googleapis.com/css?family=Abel';    /* Google Fonts用のCSSを読み込み */
+
+
+
+
+html
+{
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body
+{
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #333333;
+    background-color: #FFF;
+}
+
+
+.text-center {
+    text-align: center;
+}
+
+h2
+{
+    font-size: 3.2rem;
+}
+h3
+{
+    font-size: 2.2rem;
+}
+.box {
+  background-image: url("../images/cat.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+section .container
+{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-flex;
+    display:         flex;
+    justify-content: space-between;
+  width: 100%; 
+  box-sizing:border-box;
+  padding: 0px;
+  display:flex;
+}
+
+#text h3
+{
+    margin-bottom: 10px;
+    
+}
+.title-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            
+    -webkit-flex: 1;
+            flex: 1;
+    width: 100%; 
+    margin: 0px 5px;
+    padding: 20px;
+    background-color: #EEEEEE;
+}
+.text-box
+{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex: 1;
+            flex: 1;
+    width: 100%;         
+    margin: 0px 5px;
+    padding: 20px;
+    background-color: #C0C0C0;
+}
+
+.button {
+  width: 40%;
+  height: 30px;
+  padding: 5px;
+  margin:auto;
+  background-color: gray;
+  color: #FFF;
+  border-radius: 5px;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+footer
+{
+    padding: 50px 0;
+
+    text-align: center;
+
+    background-color: #EEEEEE;
+}
+
+@media (max-width: 768px) {
+  /*ここからスマホ*/
+  
+  
+  .box {
+  height: 250px;
+  }
+  
+  .container {
+    flex-direction: column;
+  }
+  
+  
+  /*ここまでスマホ*/
+}
+
